@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>nBox jQuery Plugin</title>
+    <link rel="stylesheet" href="../src/css/jquery.nBox.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="../src/js/jquery.nBox.js"></script>
+</head>
+<body>
+    <input type="button" value="show!" id="my-button-1" />
+    <div id="my-box-1">
+        my-box-1
+    </div>
+    <script type="text/javascript">
+    $(function(){
+        var myButton = $('#my-button-1');
+        myButton.nBox({
+            targetId:'my-box-1'
+        });
+    });
+    </script>
+</body>
+</html>
