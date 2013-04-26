@@ -21,7 +21,7 @@
             height:400,
             fadeAnimeTime:150,
             title:'MyBox',
-            targetId:null,
+            targetId:null
         };
         this.config = {};
         this.target = null;
