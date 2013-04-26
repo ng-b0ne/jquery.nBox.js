@@ -9,15 +9,22 @@
 </head>
 <body>
     <input type="button" value="show!" id="my-button-1" />
-    <div id="my-box-1">
-        my-box-1
+    <div id="my-box-1" style="padding:10px">
+        <div>コンテンツ</div>
+        <div><button class="my-box-close"> 閉じる </button></div>
     </div>
     <script type="text/javascript">
     $(function(){
         var myButton = $('#my-button-1');
+        var myBox = $('#my-box-1');
         myButton.nBox({
-            targetId:'my-box-1'
+            targetId:'my-box-1',
+            width:300,
+            height:150
         });
+        myBox.click(function(){
+            myButton.nBox('hide');
+        })
     });
     </script>
 </body>
