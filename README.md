@@ -38,7 +38,6 @@ myButton.nBox({
     height:400, // 高さのサイズ
     fadeAnimeTime:150, // 表示・非表示アニメーションのスピード
 });
-</script>
 ```
 
 #ライセンス
